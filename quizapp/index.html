@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cloud IQ — AWS Quiz</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <!-- ── INTRO SCREEN ── -->
+    <div class="screen" id="screen-intro">
+      <div class="intro-content">
+        <div class="badge">Session 01</div>
+        <h1 class="title">Cloud<span class="accent">IQ</span></h1>
+        <p class="subtitle">
+          5 questions. Test what you just learned about<br />
+          AWS, S3, and CloudFront.
+        </p>
+        <button class="btn-primary" id="btn-start">Start Quiz</button>
+        <p class="hint">Takes about 60 seconds</p>
+      </div>
+      <div class="bg-orb orb-1"></div>
+      <div class="bg-orb orb-2"></div>
+    </div>
+
+    <!-- ── QUIZ SCREEN ── -->
+    <div class="screen hidden" id="screen-quiz">
+      <!-- Progress bar -->
+      <div class="progress-track">
+        <div class="progress-fill" id="progress-fill"></div>
+      </div>
+
+      <div class="quiz-container">
+        <!-- Question counter -->
+        <div class="q-meta">
+          <span class="q-counter" id="q-counter">1 / 5</span>
+          <span class="q-score" id="q-score">Score: 0</span>
+        </div>
+
+        <!-- Question text -->
+        <div class="q-card" id="q-card">
+          <p class="q-text" id="q-text"></p>
+        </div>
+
+        <!-- Answer options -->
+        <div class="options-grid" id="options-grid"></div>
+
+        <!-- Next button (hidden until answer selected) -->
+        <button class="btn-next hidden" id="btn-next">
+          Next <span class="arrow">→</span>
+        </button>
+      </div>
+
+      <div class="bg-orb orb-3"></div>
+    </div>
+
+    <!-- ── RESULT SCREEN ── -->
+    <div class="screen hidden" id="screen-result">
+      <div class="result-content">
+        <div class="result-icon" id="result-icon"></div>
+        <h2 class="result-score" id="result-score"></h2>
+        <p class="result-label" id="result-label"></p>
+        <p class="result-msg" id="result-msg"></p>
+
+        <!-- Score breakdown -->
+        <div class="score-breakdown" id="score-breakdown"></div>
+
+        <div class="result-actions">
+          <button class="btn-primary" id="btn-retry">Try Again</button>
+          <p class="result-footer">
+            Deployed on AWS S3 + CloudFront ☁️
+          </p>
+        </div>
+      </div>
+      <div class="bg-orb orb-1"></div>
+      <div class="bg-orb orb-2"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
