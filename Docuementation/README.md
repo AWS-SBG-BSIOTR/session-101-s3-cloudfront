@@ -1,4 +1,5 @@
 # AWS SBG BSIOTR 101
+
 ## Deploy Your First Website with Amazon S3 & CloudFront
 
 Welcome to the first session of the AWS Student Community workshop series.
@@ -63,17 +64,17 @@ Before starting the workshop, ensure you have:
 ## Repository Structure
 
 ```text
-session-01-s3-cloudfront
-│
-├── quizapp/
-│   ├── index.html
-│   ├── style.css
-│   └── script.js
-│
-├── slides/
+session-101/
+├── documentation/
+│   ├── README.md
 │   └── AWS-SBG-BSIOTR-101.pdf
 │
-└── README.md
+└── quizapp/
+    ├── index.html
+    ├── style.css
+    └── script.js
+```
+
 ---
 
 ## Workshop Steps
@@ -88,7 +89,7 @@ session-01-s3-cloudfront
 
 ### Step 2 - Create an S3 Bucket
 
-1. Click "Create Bucket".
+1. Click **Create Bucket**.
 2. Enter a globally unique bucket name.
 3. Select your preferred AWS Region.
 4. Keep default settings unless instructed otherwise.
@@ -98,7 +99,7 @@ session-01-s3-cloudfront
 
 ### Step 3 - Upload Website Files
 
-Upload the contents of the starter or solution folder:
+Upload the contents of the `quizapp` folder:
 
 * index.html
 * style.css
@@ -156,7 +157,7 @@ Congratulations! Your website is now deployed on AWS.
 
 CloudFront stores content at edge locations around the world.
 
-Benefits:
+### Benefits
 
 * Faster delivery
 * Reduced latency
@@ -242,6 +243,7 @@ Possible causes:
 * Permission configuration issues
 
 Verify the origin settings and ensure deployment is complete.
+
 ---
 
 ## Key Concepts Covered
@@ -256,6 +258,7 @@ Verify the origin settings and ensure deployment is complete.
 * AWS Global Infrastructure
 
 ---
+
 ## Resources
 
 AWS Documentation:
