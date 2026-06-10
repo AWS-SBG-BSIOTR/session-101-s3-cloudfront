@@ -55,8 +55,8 @@ Amazon CloudFront is AWS's Content Delivery Network (CDN) that delivers content 
 Before starting the workshop, ensure you have:
 
 * An AWS Account
-* Internet Connection
-* Modern Web Browser
+* A stable Internet Connection
+* A modern Web Browser
 * Basic understanding of websites (HTML/CSS is helpful but not required)
 
 ---
@@ -65,39 +65,43 @@ Before starting the workshop, ensure you have:
 
 ```text
 session-101/
+│
 ├── documentation/
-│   ├── README.md
 │   └── AWS-SBG-BSIOTR-101.pdf
 │
-└── quizapp/
-    ├── index.html
-    ├── style.css
-    └── script.js
+├── quizapp/
+│   ├── index.html
+│   ├── style.css
+│   └── script.js
+│
+├── README.md
+│
+└── LICENSE
 ```
 
 ---
 
 ## Workshop Steps
 
-### Step 1 - Sign In to AWS
+### Step 1 – Sign In to AWS
 
-1. Open the AWS Console.
+1. Open the AWS Management Console.
 2. Sign in to your AWS Account.
 3. Navigate to Amazon S3.
 
 ---
 
-### Step 2 - Create an S3 Bucket
+### Step 2 – Create an S3 Bucket
 
 1. Click **Create Bucket**.
 2. Enter a globally unique bucket name.
 3. Select your preferred AWS Region.
-4. Keep default settings unless instructed otherwise.
+4. Keep the default settings unless instructed otherwise.
 5. Create the bucket.
 
 ---
 
-### Step 3 - Upload Website Files
+### Step 3 – Upload Website Files
 
 Upload the contents of the `quizapp` folder:
 
@@ -105,43 +109,43 @@ Upload the contents of the `quizapp` folder:
 * style.css
 * script.js
 
-Verify that the files appear in the bucket.
+Verify that all files appear in the bucket.
 
 ---
 
-### Step 4 - Configure Public Access
+### Step 4 – Configure Public Access
 
-Update bucket permissions according to workshop instructions so that website content can be served publicly.
+Update bucket permissions according to the workshop instructions so that website content can be served publicly.
 
 ---
 
-### Step 5 - Configure Static Website Hosting
+### Step 5 – Configure Static Website Hosting
 
-1. Open Bucket Properties.
-2. Enable Static Website Hosting.
+1. Open the bucket's **Properties** tab.
+2. Enable **Static Website Hosting**.
 3. Set:
 
 ```text
 Index Document: index.html
 ```
 
-4. Save changes.
+4. Save the configuration.
 
 ---
 
-### Step 6 - Create a CloudFront Distribution
+### Step 6 – Create a CloudFront Distribution
 
-1. Open CloudFront.
+1. Open Amazon CloudFront.
 2. Create a new Distribution.
-3. Select your S3 bucket as the origin.
-4. Configure default settings.
+3. Select your S3 bucket as the Origin.
+4. Configure the default settings.
 5. Create the distribution.
 
 Provisioning may take several minutes.
 
 ---
 
-### Step 7 - Access Your Website
+### Step 7 – Access Your Website
 
 Once the distribution is deployed:
 
@@ -149,7 +153,7 @@ Once the distribution is deployed:
 2. Open it in a browser.
 3. Verify that your website is accessible.
 
-Congratulations! Your website is now deployed on AWS.
+🎉 Congratulations! Your website is now deployed on AWS.
 
 ---
 
@@ -159,12 +163,12 @@ CloudFront stores content at edge locations around the world.
 
 ### Benefits
 
-* Faster delivery
+* Faster content delivery
 * Reduced latency
 * Lower load on origin servers
 * Improved user experience
 
-### Demo
+### Demonstration
 
 Modify a file and upload it again.
 
@@ -173,7 +177,7 @@ Observe:
 * Immediate changes may not appear.
 * Cached content may continue to be served temporarily.
 
-This behavior demonstrates how caching works.
+This behavior demonstrates how caching works in a Content Delivery Network (CDN).
 
 ---
 
@@ -200,8 +204,8 @@ Possible causes:
 
 Try:
 
-* Refreshing the page using Ctrl + F5
-* Opening the site in Incognito/Private Mode
+* Refreshing the page using **Ctrl + F5**
+* Opening the website in Incognito/Private Mode
 * Waiting a few minutes for cache propagation
 
 ---
@@ -218,7 +222,9 @@ Try using:
 
 Example:
 
+```text
 aws-sbg-bsiotr-john-1234
+```
 
 ---
 
@@ -251,7 +257,7 @@ Verify the origin settings and ensure deployment is complete.
 * Cloud Computing
 * Object Storage
 * Static Website Hosting
-* CDN (Content Delivery Network)
+* Content Delivery Networks (CDNs)
 * HTTPS
 * Edge Locations
 * Caching
@@ -260,8 +266,6 @@ Verify the origin settings and ensure deployment is complete.
 ---
 
 ## Resources
-
-AWS Documentation:
 
 * Amazon S3 Documentation
 * Amazon CloudFront Documentation
@@ -279,3 +283,4 @@ This project is licensed under the MIT License.
 ## AWS Student Community
 
 This workshop is part of the AWS Student Community learning series designed to help students build practical cloud skills through hands-on projects and guided workshops.
+
