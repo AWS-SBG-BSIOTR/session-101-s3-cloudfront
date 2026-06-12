@@ -240,17 +240,6 @@ CloudFront caches files to avoid fetching them from S3 on every request. By defa
 * **Content Delivery Network (CDN):** Distributing content globally using Edge Locations.
 * **Latency & Caching:** Decreasing request times by serving files from cached edge databases.
 * **HTTPS Encryption:** Securing static endpoints using SSL/TLS certificates provided by CloudFront.
-
----
-
-## 🚀 What's Next?
-In the next session, we will move beyond static websites and build a dynamic serverless application using:
-* **AWS Lambda** (Compute)
-* **Amazon API Gateway** (RESTful APIs)
-* **Amazon DynamoDB** (NoSQL Database)
-
-Become a cloud architect one service at a time!
-
 ---
 
 ## 📚 Resources
